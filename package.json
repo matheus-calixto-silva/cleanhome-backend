@@ -1,0 +1,7 @@
+{
+  "name": "cleanhome-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matheus Calixto <matheuscalixto8@gmail.com>",
+  "license": "MIT"
+}
