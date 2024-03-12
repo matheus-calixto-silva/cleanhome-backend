@@ -16,7 +16,7 @@ export const getAllClients = async (_req: Request, res: Response) => {
       username: row.username,
       email: row.email,
       phone: row.phone,
-      coordinateX: row.coordinate_x, // Using coordinateX for clarity
+      coordinateX: row.coordinate_x,
       coordinateY: row.coordinate_y,
     }));
 
@@ -27,7 +27,7 @@ export const getAllClients = async (_req: Request, res: Response) => {
       errorMessage += ' Error: ' + err.message;
     }
     console.error(errorMessage);
-    throw err; // Re-throw the error for handling in the calling code
+    throw err;
   }
 };
 
@@ -35,7 +35,6 @@ export const createNewClient = async (req: Request, res: Response) => {
   try {
     const { name, username, email, phone, coordinateX, coordinateY } = req.body;
 
-    // Input validation (optional but recommended)
     if (
       !name ||
       !username ||
@@ -68,7 +67,7 @@ export const createNewClient = async (req: Request, res: Response) => {
       errorMessage += ' Error: ' + err.message;
     }
     console.error(errorMessage);
-    throw err; // Re-throw the error for handling in the calling code
+    throw err;
   }
 };
 
@@ -104,7 +103,7 @@ export const getClientsByLocation = async (_req: Request, res: Response) => {
       username: row.username,
       email: row.email,
       phone: row.phone,
-      coordinateX: row.coordinate_x, // Using coordinateX for clarity
+      coordinateX: row.coordinate_x,
       coordinateY: row.coordinate_y,
     }));
 
@@ -117,6 +116,6 @@ export const getClientsByLocation = async (_req: Request, res: Response) => {
       errorMessage += ' Error: ' + err.message;
     }
     console.error(errorMessage);
-    throw err; // Re-throw the error for handling in the calling code
+    throw err;
   }
 };
