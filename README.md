@@ -43,15 +43,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **API**
 
--   **[NodeJS](https://nodejs.org/en)**
+-   **[NodeJS - 20.11.1](https://nodejs.org/en)**
 -   **[Express](https://expressjs.com/pt-br/)**
 -   **[TypeScript](https://www.typescriptlang.org/)**
--   **[PostgreSQL](https://www.postgresql.org/)**
+-   **[PostgreSQL - 16.2](https://www.postgresql.org/)**
 
 #### **Utilitários**
 
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
--   Teste de API:  **[Insomnia](https://insomnia.rest/)**
+-   Editor:  **[Visual Studio Code - 1.87.1](https://code.visualstudio.com/)**
+-   Teste de API:  **[Insomnia - 8.6.1](https://insomnia.rest/)**
 
 
 ## 🦸 Autor
