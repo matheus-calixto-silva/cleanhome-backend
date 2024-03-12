@@ -1,15 +1,10 @@
 import cors from 'cors';
 import express from 'express';
-import { Client } from 'pg';
 
 import { clientsRouter } from './routes/clients';
-import { PG_URI, PORT } from './utils/config';
+import { PORT, pool } from './utils/config';
 
-const client = new Client({
-  connectionString: PG_URI,
-});
-
-client
+pool
   .connect()
   .then(() => {
     console.log('Conectado ao banco de dados!');
